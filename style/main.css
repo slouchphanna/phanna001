@@ -1,56 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Sekuya&display=swap');
 :root{
-    --col1:orange;
-    --col2:red;
-    --co13:white;
-    --col4:gray;
-    --col5:rgba(212,155,75,0.5);
+    --col1: orange;
+    --col2: red;
+    --col3: white;
+    --col4: gray;
+    --col5: rgba(212, 155, 75, 0.5);
 }
-body{
+body {
     margin: 0;
 }
 *{
-    bok-sizing:border-box;
+    box-sizing: border-box;
 }
-.header{
+.header {
     background-color: var(--col5);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 20px;
-    border-bottom: 3px solid var(--col1);
+    align-items:center;
+    border-bottom:3px solid var(--col3);
     box-shadow: 3px 3px 3px var(--col4);
-    position: sticky;
-    top: 0;
-    z-index:2;
+    position:sticky;
+    top:0
 }
-.menu li{
-    list-style:none;
-    display:inline;
-    margin-right:20px;
+.menu li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
 }
 .menu li:hover , .home{
-    color: var(--col2);
-    text-shadow: 2px 2px 1px var(--col3);
-    border-bottom:3px solid var(--col2);
+    color:var(--col2);
+    text-shadow:2px 2px 1px var(--col3);
+    border-bottom: 3px solid var(col--2);
     padding-bottom: 5px;
-    box-shadow: 0 2px 1px var(--co13);
+    box-shadow:0 2px 1px var(--col3);
 }
-.body{height: 1500px;
-    background-color: var(--col4) ;
-}
+.body{height:1500px; background-color: var(--col14);}
 .logo{
-      font-family: "Sekuya", system-ui;
+    font-family: "Archivo Black", sans-serif;
+    font-size:30px;
+    color:var(--col2);
+    text-shadow: 2px 2px 2px var(--col4);
 }
 .cover{
     display: flex;
     justify-content: space-between;
 }
 .cover img{
-    with: 49%;
-    border:10px solid var(--co13);
-
+    width: 49%;
+    border: 10px solid var(--go3);
+    transition-duration: 1s;
 }
 .cover img:hover{
     transform: scale(1.05);
+   transition: 1s;
 }
