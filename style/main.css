@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&family=Sekuya&display=swap');
+:root{
+    --col1:orange;
+    --col2:red;
+    --co13:white;
+    --col4:gray;
+    --col5:rgba(212,155,75,0.5);
+}
+body{
+    margin: 0;
+}
+*{
+    bok-sizing:border-box;
+}
+.header{
+    background-color: var(--col5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid var(--col1);
+    box-shadow: 3px 3px 3px var(--col4);
+    position: sticky;
+    top: 0;
+    z-index:2;
+}
+.menu li{
+    list-style:none;
+    display:inline;
+    margin-right:20px;
+}
+.menu li:hover , .home{
+    color: var(--col2);
+    text-shadow: 2px 2px 1px var(--col3);
+    border-bottom:3px solid var(--col2);
+    padding-bottom: 5px;
+    box-shadow: 0 2px 1px var(--co13);
+}
+.body{height: 1500px;
+    background-color: var(--col4) ;
+}
+.logo{
+      font-family: "Sekuya", system-ui;
+}
+.cover{
+    display: flex;
+    justify-content: space-between;
+}
+.cover img{
+    with: 49%;
+    border:10px solid var(--co13);
+
+}
+.cover img:hover{
+    transform: scale(1.05);
+}
